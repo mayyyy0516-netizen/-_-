@@ -1,0 +1,27 @@
+{
+  "name": "doutong-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "latest",
+    "tailwindcss": "latest",
+    "@tailwindcss/vite": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}
