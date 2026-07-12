@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const links = [["首页", "#home"], ["作品", "#work"], ["关于我", "#about"], ["能力", "#skills"], ["联系我", "#contact"]];
+const links = [["首页", "#home"], ["关于我", "#about"], ["精选项目", "#work"], ["专业能力", "#skills"], ["请联系我", "#contact"]];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

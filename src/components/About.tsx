@@ -5,7 +5,7 @@ const stats = [["5年", "大厂实战经验"], ["2200W", "服务产品 DAU"], ["
 
 export default function About() {
   return <section id="about" className="section about wrap">
-    <SectionLabel index="01">ABOUT / 关于我</SectionLabel>
+    <SectionLabel index="01">ABOUT ME / 关于我</SectionLabel>
     <div className="about-layout">
       <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="portrait-wrap">
         {/* 头像来自个人作品集 PDF，可继续替换为更高分辨率原图 */}
