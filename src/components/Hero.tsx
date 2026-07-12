@@ -13,7 +13,7 @@ export default function Hero() {
     <div className="hero-scrim" />
     <div className="hero-grid" />
     <motion.div style={{ y, opacity }} className="hero-content">
-      <p className="eyebrow"><span /> UI · AI · MOTION DESIGNER</p>
+      <p className="eyebrow"><span /> PS · AI · AE · AIGC</p>
       <h1>创造有温度的<br /><em>数字体验</em></h1>
       <div className="hero-meta"><p>将设计、技术与商业目标连接起来，<br />让每一次视觉表达都更有价值。</p><span>SHENZHEN · CHINA<br />AVAILABLE FOR WORK</span></div>
     </motion.div>
