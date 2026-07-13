@@ -14,7 +14,7 @@ export default function About() {
     <div className="about-layout">
       <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="portrait-wrap">
         {/* 头像来自个人作品集 PDF，可继续替换为更高分辨率原图 */}
-        <img src="/assets/portfolio/portrait.webp" alt="窦桐个人头像" />
+        <img src={`${import.meta.env.BASE_URL}assets/portfolio/portrait.webp`} alt="窦桐个人头像" />
         <div className="portrait-tag"><span>MAY</span><small>OPERATION DESIGNER</small></div>
       </motion.div>
       <div className="about-copy">

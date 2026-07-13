@@ -8,8 +8,8 @@ export default function Hero() {
   const opacity = useTransform(scrollY, [0, 650], [1, 0]);
   return <section id="home" className="hero">
     <Navbar />
-    {/* 素材替换：将 /assets/hero-placeholder.mp4 替换为你的背景视频 */}
-    <video className="hero-video" autoPlay muted loop playsInline poster="https://picsum.photos/seed/dark-fluid/1920/1080"><source src="/assets/hero-placeholder.mp4" type="video/mp4" /></video>
+    {/* 素材替换：将 public/assets/hero-placeholder.mp4 替换为你的背景视频 */}
+    <video className="hero-video" autoPlay muted loop playsInline poster="https://picsum.photos/seed/dark-fluid/1920/1080"><source src={`${import.meta.env.BASE_URL}assets/hero-placeholder.mp4`} type="video/mp4" /></video>
     <div className="hero-scrim" />
     <div className="hero-grid" />
     <motion.div style={{ y, opacity }} className="hero-content">
