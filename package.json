@@ -9,14 +9,16 @@
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@tailwindcss/vite": "latest",
     "@vitejs/plugin-react": "latest",
     "framer-motion": "latest",
+    "gsap": "^3.15.0",
     "lucide-react": "latest",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "latest",
     "tailwindcss": "latest",
-    "@tailwindcss/vite": "latest",
     "vite": "latest"
   },
   "devDependencies": {
