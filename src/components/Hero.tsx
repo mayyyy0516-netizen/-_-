@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Navbar from "./Navbar";
 import SplitText from "./SplitText";
+import ShinyText from "./ShinyText";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -16,17 +17,28 @@ export default function Hero() {
     <motion.div style={{ y, opacity }} className="hero-content">
       <p className="eyebrow"><span /> PS · AI · AE · AIGC</p>
       <h1 className="hero-title" aria-label="创造有商业价值的运营设计">
-        <SplitText
-          tag="span"
-          text="创造有商业价值的"
-          className="hero-title-line"
-          delay={55}
-          duration={0.9}
-          ease="power4.out"
-          from={{ opacity: 0, y: 70, rotateX: -55 }}
-          to={{ opacity: 1, y: 0, rotateX: 0 }}
-          rootMargin="0px"
-        />
+        <span className="hero-title-line hero-title-first">
+          <SplitText
+            tag="span"
+            text="创造"
+            className="hero-title-prefix"
+            delay={55}
+            duration={0.9}
+            ease="power4.out"
+            from={{ opacity: 0, y: 70, rotateX: -55 }}
+            to={{ opacity: 1, y: 0, rotateX: 0 }}
+            rootMargin="0px"
+          />
+          <ShinyText
+            text="有商业价值的"
+            className="hero-title-shiny"
+            speed={2.8}
+            delay={1.4}
+            color="#f3f8ff"
+            shineColor="#aff3ff"
+            spread={115}
+          />
+        </span>
         <SplitText
           tag="span"
           text="运营设计"
