@@ -1,0 +1,2 @@
+.side-rays-container { width:100%;height:100%;position:relative;pointer-events:none;z-index:1;overflow:hidden; }
+.hero-side-rays { position:absolute;inset:0;opacity:.72;mix-blend-mode:screen;mask-image:linear-gradient(115deg,transparent 8%,#000 48%,#000 100%); }

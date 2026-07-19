@@ -3,6 +3,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Navbar from "./Navbar";
 import SplitText from "./SplitText";
 import ShinyText from "./ShinyText";
+import SideRays from "./SideRays";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -14,6 +15,20 @@ export default function Hero() {
     <video className="hero-video" autoPlay muted loop playsInline poster="https://picsum.photos/seed/dark-fluid/1920/1080"><source src={`${import.meta.env.BASE_URL}assets/hero-placeholder.mp4`} type="video/mp4" /></video>
     <div className="hero-scrim" />
     <div className="hero-grid" />
+    <SideRays
+      className="hero-side-rays"
+      speed={0.55}
+      rayColor1="#203b5c"
+      rayColor2="#8ad7ea"
+      intensity={0.72}
+      spread={1.35}
+      origin="top-right"
+      tilt={-4}
+      saturation={0.75}
+      blend={0.74}
+      falloff={2.1}
+      opacity={0.3}
+    />
     <motion.div style={{ y, opacity }} className="hero-content">
       <p className="eyebrow"><span /> PS · AI · AE · AIGC</p>
       <h1 className="hero-title" aria-label="创造有商业价值的运营设计">
