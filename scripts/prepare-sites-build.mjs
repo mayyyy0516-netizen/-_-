@@ -5,3 +5,9 @@ await copyFile(
   new URL("../worker/static-site.js", import.meta.url),
   new URL("../dist/server/index.js", import.meta.url),
 );
+
+await mkdir(new URL("../dist/.openai/", import.meta.url), { recursive: true });
+await copyFile(
+  new URL("../.openai/hosting.json", import.meta.url),
+  new URL("../dist/.openai/hosting.json", import.meta.url),
+);
