@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Aperture, Bot, Boxes, Film, Sparkles, TrendingUp } from "lucide-react";
 import SectionLabel from "./SectionLabel";
 
@@ -12,7 +11,7 @@ const skills = [
 ];
 export default function Skills() {
   return <section id="skills" className="section skills wrap"><SectionLabel index="03">CAPABILITIES / 专业能力</SectionLabel>
-    <div className="section-heading"><h2>设计能力</h2><p>跨越策略、视觉与技术，<br />提供完整而敏捷的设计解决方案。</p></div>
-    <div className="skill-grid">{skills.map(([Icon, title, en, desc], i) => <motion.div key={String(title)} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * .05 }} viewport={{ once: true }} className="skill-card"><Icon /><span>0{i + 1}</span><p>{en as string}</p><h3>{title as string}</h3><small>{desc as string}</small></motion.div>)}</div>
+    <div className="section-heading"><h2 data-display-reveal>设计能力</h2><p>跨越策略、视觉与技术，<br />提供完整而敏捷的设计解决方案。</p></div>
+    <div className="skill-grid">{skills.map(([Icon, title, en, desc], i) => <div key={String(title)} className="skill-card"><Icon /><span>0{i + 1}</span><p>{en as string}</p><h3>{title as string}</h3><small>{desc as string}</small></div>)}</div>
   </section>;
 }
