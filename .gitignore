@@ -43,3 +43,7 @@ next-env.d.ts
 /.pnpm-store/
 *.zip
 *.tsbuildinfo
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
