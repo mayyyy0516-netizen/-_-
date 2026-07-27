@@ -39,6 +39,7 @@ export default function Hero() {
       falloff={2.1}
       opacity={0.3}
     />
+    <div className="hero-bottom-fade" aria-hidden="true" />
     <motion.div style={{ y, opacity }} className="hero-content">
       <p className="eyebrow"><span /> PS · AI · AE · AIGC</p>
       <h1 className="hero-title" aria-label="创造有商业价值的运营设计">
