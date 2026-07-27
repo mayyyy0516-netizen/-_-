@@ -49,7 +49,7 @@ export default function HomePage() {
         yPercent: 115,
         scaleX: 0.78,
         clipPath: "inset(0 100% 0 0)",
-        transformOrigin: "left center",
+        transformOrigin: "center center",
       }, {
         yPercent: 0,
         scaleX: 1,
